@@ -3,6 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Flask MongoDB Atlas Form</title>
+    <style>
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <h2>Submit Your Details</h2>
@@ -15,5 +30,18 @@
 
         <button type="submit">Submit</button>
     </form>
+    <!-- Check for flashed messages from Flask -->
+{% with messages = get_flashed_messages(with_categories=true) %}
+  {% if messages %}
+    <script>
+      // Loop through the flashed messages passed from Python
+      {% for category, message in messages %}
+        // You can customize the popup look based on the category ('error' or 'success')
+        alert("{{ category.upper() }}: {{ message }}");
+      {% endfor %}
+    </script>
+  {% endif %}
+{% endwith %}
+  
 </body>
 </html>
