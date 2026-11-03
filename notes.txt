@@ -1,0 +1,7 @@
+'''
+Objective: Build a Flask application with a JSON API route and a frontend form that stores submitted data in MongoDB Atlas, with proper success and error handling.
+Task 1: JSON API Route
+    1. Create a Flask application with an /api route. When this route is accessed, it should return a JSON list. The data should be stored in a backend file, read from it, and sent as a response.
+
+
+'''
