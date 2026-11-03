@@ -10,11 +10,6 @@ On error: display the error on the same page without redirection.
 
 
 '''
-azharuddinansari232_db_user
-w95p41KFe9oaDEN3
 
-mongodb+srv://azharuddinansari232_db_user:w95p41KFe9oaDEN3@azharcluster.c7vhbgu.mongodb.net/
 
 python -m pip install "pymongo[srv]==3.12"
-
-mongodb+srv://azharuddinansari232_db_user:w95p41KFe9oaDEN3@azharcluster.c7vhbgu.mongodb.net/
